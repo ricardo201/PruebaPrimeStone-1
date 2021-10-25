@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{94B5FF
 		Seed.txt = Seed.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{58E9BBEF-F276-4DBC-B7E3-01DFFFF3F804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{A736C29B-5E18-4C2A-B045-6FF9C07FEFCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{394125E4-E664-48C2-B683-0298977F7F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{394125E4-E664-48C2-B683-0298977F7F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{394125E4-E664-48C2-B683-0298977F7F12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E9BBEF-F276-4DBC-B7E3-01DFFFF3F804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E9BBEF-F276-4DBC-B7E3-01DFFFF3F804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E9BBEF-F276-4DBC-B7E3-01DFFFF3F804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E9BBEF-F276-4DBC-B7E3-01DFFFF3F804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A736C29B-5E18-4C2A-B045-6FF9C07FEFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A736C29B-5E18-4C2A-B045-6FF9C07FEFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A736C29B-5E18-4C2A-B045-6FF9C07FEFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A736C29B-5E18-4C2A-B045-6FF9C07FEFCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

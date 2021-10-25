@@ -1,0 +1,111 @@
+2021-10-24 19:48:27.221 -05:00 [INF] HTTP GET /index.html responded 200 in 240.1394 ms
+2021-10-24 19:48:27.809 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "DELETE api/Curso/{id}" for actions - API.Controllers.CursoController.Delete (API),API.Controllers.CursoController.CancelarCurso (API). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-24 19:48:27.974 -05:00 [ERR] HTTP GET /swagger/v1/swagger.json responded 500 in 320.4941 ms
+2021-10-24 19:49:47.514 -05:00 [INF] HTTP GET /index.html responded 200 in 164.8632 ms
+2021-10-24 19:49:47.996 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 214.6656 ms
+2021-10-24 19:50:00.513 -05:00 [INF] HTTP POST /api/Auth responded 200 in 4554.9133 ms
+2021-10-24 19:50:24.656 -05:00 [INF] HTTP GET /api/Estudiante responded 401 in 142.2672 ms
+2021-10-24 19:50:36.109 -05:00 [INF] HTTP POST /api/Auth responded 200 in 110.0940 ms
+2021-10-24 19:50:54.032 -05:00 [INF] HTTP GET /api/Estudiante responded 200 in 343.3111 ms
+2021-10-24 19:51:13.937 -05:00 [INF] HTTP PUT /api/Estudiante responded 401 in 27.1011 ms
+2021-10-24 19:51:38.227 -05:00 [INF] HTTP PUT /api/Estudiante responded 400 in 14096.0052 ms
+2021-10-24 19:52:37.209 -05:00 [INF] HTTP GET /index.html responded 200 in 228.2005 ms
+2021-10-24 19:52:37.739 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 226.8306 ms
+2021-10-24 19:54:45.388 -05:00 [INF] HTTP GET /index.html responded 200 in 171.0210 ms
+2021-10-24 19:54:45.793 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 215.6903 ms
+2021-10-24 19:55:31.828 -05:00 [INF] HTTP DELETE /api/Estudiante/34 responded 200 in 35555.3726 ms
+2021-10-24 19:56:15.670 -05:00 [INF] HTTP GET /index.html responded 200 in 133.8495 ms
+2021-10-24 19:56:16.036 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 169.6115 ms
+2021-10-24 19:56:59.442 -05:00 [INF] HTTP DELETE /api/Estudiante/34 responded 400 in 33933.2479 ms
+2021-10-24 19:59:36.803 -05:00 [INF] HTTP GET /index.html responded 200 in 148.0410 ms
+2021-10-24 19:59:37.395 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 274.0421 ms
+2021-10-24 20:02:18.355 -05:00 [INF] HTTP GET /index.html responded 200 in 190.8369 ms
+2021-10-24 20:02:18.772 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 201.0828 ms
+2021-10-24 20:04:09.104 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Services.EstudianteService.DeleteEstudianteAsync(Int32 id, Int32 usuarioId) in C:\prueba\PruebaPrimeStone\Common\Services\EstudianteService.cs:line 55
+   at API.Controllers.EstudianteController.Delete(Int32 id) in C:\prueba\PruebaPrimeStone\API\Controllers\EstudianteController.cs:line 80
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-24 20:04:09.255 -05:00 [ERR] HTTP DELETE /api/Estudiante/34 responded 500 in 81382.7869 ms
+2021-10-24 20:46:35.043 -05:00 [INF] HTTP GET /index.html responded 200 in 215.9467 ms
+2021-10-24 20:46:35.546 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 255.3908 ms
+2021-10-24 20:46:43.436 -05:00 [INF] HTTP DELETE /api/Estudiante/34 responded 401 in 1671.0563 ms
+2021-10-24 20:46:58.842 -05:00 [INF] HTTP POST /api/Auth responded 200 in 5161.4582 ms
+2021-10-24 20:47:53.274 -05:00 [INF] HTTP DELETE /api/Estudiante/34 responded 400 in 31859.3320 ms
+2021-10-24 20:48:43.321 -05:00 [ERR] HTTP DELETE /api/Estudiante/34 responded 500 in 42272.8385 ms
+2021-10-24 20:57:04.022 -05:00 [INF] HTTP GET /index.html responded 200 in 128.6289 ms
+2021-10-24 20:57:04.375 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 165.6491 ms
+2021-10-24 20:57:15.317 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'Infrastructure.Validators.ExceptionFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method6(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.TypeFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-24 20:57:15.495 -05:00 [ERR] HTTP DELETE /api/Estudiante/34 responded 500 in 859.9256 ms
+2021-10-24 21:13:05.937 -05:00 [INF] HTTP GET /index.html responded 200 in 162.9622 ms
+2021-10-24 21:13:06.337 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 174.3100 ms
+2021-10-24 21:13:15.589 -05:00 [INF] HTTP DELETE /api/Estudiante/34 responded 401 in 557.5212 ms
+2021-10-24 21:13:27.813 -05:00 [INF] HTTP POST /api/Auth responded 200 in 3537.9164 ms
+2021-10-24 21:14:00.057 -05:00 [ERR]    at Common.Services.EstudianteService.DeleteEstudianteAsync(Int32 id, Int32 usuarioId) in C:\prueba\PruebaPrimeStone\Common\Services\EstudianteService.cs:line 53
+   at API.Controllers.EstudianteController.Delete(Int32 id) in C:\prueba\PruebaPrimeStone\API\Controllers\EstudianteController.cs:line 80
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-10-24 21:14:00.071 -05:00 [INF] HTTP DELETE /api/Estudiante/34 responded 400 in 5922.1551 ms
+2021-10-24 21:15:04.127 -05:00 [INF] HTTP GET /index.html responded 200 in 144.6416 ms
+2021-10-24 21:15:04.484 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 175.5304 ms
+2021-10-24 21:15:28.505 -05:00 [ERR]    at Common.Services.EstudianteService.DeleteEstudianteAsync(Int32 id, Int32 usuarioId) in C:\prueba\PruebaPrimeStone\Common\Services\EstudianteService.cs:line 55
+   at API.Controllers.EstudianteController.Delete(Int32 id) in C:\prueba\PruebaPrimeStone\API\Controllers\EstudianteController.cs:line 80
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-10-24 21:15:28.614 -05:00 [ERR] HTTP DELETE /api/Estudiante/34 responded 500 in 20059.4307 ms
